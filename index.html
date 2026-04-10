@@ -5,42 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controle Financeiro</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="imgs/icon.png" type="image/x-icon">
 </head>
 <body>
-    <header>
+    <header class="header">
         <h1>Vida Financeira</h1>
         <p>Suas financias na palma da mão!</p>
+        <img src="imgs/cofrinho-porco.png" alt="cofrinho" width="400px">
     </header>
 
-    <main>
+    <main class="container">
 
-        <h2>Lembretes</h2>
-        <div>MOSTRAR LEMBRETES</div> <!-- Mostrar data que foi adicionada -->
+        <div>
+            <h2>Lembretes</h2>
+            <p>MOSTRAR LEMBRETES</p>
+            <button class="addLembretes">+</button>
+            <label for="lembretes">Adicionar lembrete</label>
+        </div> <!-- Mostrar data que foi adicionada -->
 
-        <h2>Seus ganhos</h2>
-        <div>MOSTRAR GANHOS</div> <!-- Mostrar data que foi adicionada -->
+        <div>
+            <h2>Ganhos &#128178;</h2>
+            <p>MOSTRAR GANHOS</p>
+            <button class="addGanhos">+</button>
+            <label for="ganhos">Adicionar ganhos</label>
+        </div> <!-- Mostrar data que foi adicionada -->
 
-        <h2>Seus gastos</h2>
-        <div>MOSTRAR GASTOS</div> <!-- Mostrar data que foi adicionada -->
-
-        <h2>Categorias</h2>
-        <div>MOSTRAR CATEGORIAS</div> <!-- Mostrar data que foi adicionada -->
+        <div>
+            <h2>Gastos &#10008;</h2>
+            <p>MOSTRAR GASTOS</p>
+            <button class="addGastos">+</button>
+            <label for="gastos">Adicionar gastos</label>
+        </div> <!-- Mostrar data que foi adicionada -->
 
     </main>
-
-    <section>
-        <button class="addGastos">+</button>
-        <label for="gastos">Adicionar ganhos</label>
-        <!-- Assim que colocar os ganhos, colocar opção para categorias. -->
-    
-        <button class="addGastos">+</button>
-        <label for="gastos">Adicionar gastos</label>
-        <!-- Assim que colocar os gastos, colocar opção para categorias. -->
-    
-        <button class="addLembretes">+</button>
-        <label for="lembretes">Adicionar lembrete</label>
-    </section>
 
     <footer>
         <p>Contatos</p>

@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif, Courier, monospace;
+    font-size: 20px;
+}
+
+
+/* TOPO DO SITE */
+
+.header {
+    background-color: rgb(191, 255, 165);
+    height: 600px;
+    padding: 60px 0 0 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+}
+
+/* MEIO DO SITE */
+
+.container {
+    background-color: rgb(131, 207, 184);
+    padding: 20px;
+    display: grid;
+    grid-template-columns:  1fr [um] 1fr [dois] 1fr [tres] 1fr [quatro];
+}
+
+/* FOOTER DO SITE */
+
+footer {
+    background-color: rgb(77, 112, 81);
+    height: 600px;
+    text-align: center;
+}
