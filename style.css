@@ -9,21 +9,62 @@ body {
     font-size: 20px;
 }
 
+.grid {
+    display: grid;
+}
+
 
 /* TOPO DO SITE */
 
+.topo {
+    height: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #9dbd87;
+    padding: 10px;
+}
+
+.topo aside {
+    display: flex;
+    
+    padding: 20px 20px 20px 800px;
+    font-size: 30px;
+    color: aliceblue;
+    grid-template-rows: 1fr;
+}
+
 .header {
-    background-color: rgb(191, 255, 165);
+    /* background-image:
+    linear-gradient(0.25turn , #131313, #799168); */
+    background:
+    right / contain no-repeat
+    url("imgs/fundo-de-padrao-de-cifrao-desenhado-a-mao_23-2150982933.avif"),
+  #fbfbfbd2;
+    color: rgb(9, 255, 62);
     height: 600px;
     padding: 60px 0 0 60px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    
+}
+
+
+
+
+.img-top {
+    grid-column: span 1 / 4;
+    margin: 0 50px 0 0;
 }
 
 h1 {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 60px;
+    font-size: 100px;
 }
+
+.header p {
+    padding: 0 0 0 20px;
+}
+
 
 /* MEIO DO SITE */
 
