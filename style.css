@@ -17,52 +17,67 @@ body {
 /* TOPO DO SITE */
 
 .topo {
-    height: 120px;
+    height: 140px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #9dbd87;
     padding: 10px;
 }
 
-.topo aside {
+.list ul {
     display: flex;
-    
     padding: 20px 20px 20px 800px;
     font-size: 30px;
     color: aliceblue;
-    grid-template-rows: 1fr;
+    align-items: center;
+    gap: 40px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #bff79a;
+}
+
+.button {
+    display: flex;
+    height: 80px;
+    width: 180px;
+    background-color: #4b5f00;
+    align-items: center;
+    border-radius: 6%;
+    justify-content: center;
 }
 
 .header {
-    /* background-image:
-    linear-gradient(0.25turn , #131313, #799168); */
     background:
     right / contain no-repeat
-    url("imgs/fundo-de-padrao-de-cifrao-desenhado-a-mao_23-2150982933.avif"),
-  #fbfbfbd2;
-    color: rgb(9, 255, 62);
-    height: 600px;
+    url("imgs/fundo-de-padrao-de-cifrao-desenhado-a-mao_23-2150982933.png"),
+  rgba(76, 112, 72, 0.137);
+    height: 800px;
     padding: 60px 0 0 60px;
     display: grid;
     grid-template-columns: 1fr;
-    
 }
 
-
-
-
-.img-top {
-    grid-column: span 1 / 4;
-    margin: 0 50px 0 0;
+.img {
+    margin: 10px;
 }
 
 h1 {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 100px;
+    font-size: 110px;
+    color: #4b5f00;
+    width: 900px;
 }
 
-.header p {
-    padding: 0 0 0 20px;
+.header h2 {
+    padding: 0 0 0 30px;
+    color: #4b5f00;
+    font-style: italic;
 }
 
 
