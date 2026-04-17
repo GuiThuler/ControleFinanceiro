@@ -13,20 +13,18 @@ body {
     display: grid;
 }
 
-
 /* TOPO DO SITE */
 
 .topo {
-    height: 140px;
+    height: 120px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #9dbd87;
-    padding: 10px;
 }
 
 .list ul {
     display: flex;
-    padding: 20px 20px 20px 800px;
+    padding: 35px 20px 20px 800px;
     font-size: 30px;
     color: aliceblue;
     align-items: center;
@@ -44,27 +42,31 @@ a {
 
 .button {
     display: flex;
-    height: 80px;
+    height: 50px;
     width: 180px;
     background-color: #4b5f00;
     align-items: center;
-    border-radius: 6%;
+    border-radius: 2%;
     justify-content: center;
 }
 
 .header {
     background:
     right / contain no-repeat
-    url("imgs/fundo-de-padrao-de-cifrao-desenhado-a-mao_23-2150982933.png"),
+    url("assets/imgs/fundo-de-padrao-de-cifrao-desenhado-a-mao_23-2150982933.png"),
   rgba(76, 112, 72, 0.137);
     height: 800px;
-    padding: 60px 0 0 60px;
+    padding: 60px 0 0 40px;
     display: grid;
     grid-template-columns: 1fr;
 }
 
 .img {
     margin: 10px;
+}
+
+.seta {
+    margin: 450px 150px;
 }
 
 h1 {
@@ -86,14 +88,21 @@ h1 {
 .container {
     background-color: rgb(131, 207, 184);
     padding: 20px;
+    height: 1200px;
     display: grid;
     grid-template-columns:  1fr [um] 1fr [dois] 1fr [tres] 1fr [quatro];
+    gap: 34%;
+}
+
+.section {
+    background-color: #4b5f0057;
+    width: 200px;
 }
 
 /* FOOTER DO SITE */
 
 footer {
     background-color: rgb(77, 112, 81);
-    height: 600px;
+    height: 30vw;
     text-align: center;
 }
