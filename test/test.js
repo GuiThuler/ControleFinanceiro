@@ -5,7 +5,6 @@ function addFormEvent() {
     const addQuantia = []
     addCategoria.push('Mercado')
     addQuantia.push(Number(1500))
-    const deletar = delete[]
     
     console.log(addCategoria , addQuantia)
 }
