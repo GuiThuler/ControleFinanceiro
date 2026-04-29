@@ -8,67 +8,53 @@ function adicionarEvent() {
   const resultadoGanho = document.querySelector('.resultadoGanho');
   const resultadoGasto = document.querySelector('.resultadoGasto');
 
-  function formEvent(evento) {
-    evento.preventDefault();
+  function formEvent(e) {
+    e.preventDefault();
 
     setTimeout(() => {
-            this.reset(); // Limpa todos os campos do formulário , o 1 siginifica milisegundo
+            e.target.reset(); // Limpa todos os campos do formulário , o 1 siginifica milisegundo
         }, 1);
 
     // ADD LEMBRETES
-    
-     function lembreteEvent() {
 
+    if (e.target === formLembrete) {
       const lembrete = [];
-      const addLembrete = formLembrete.querySelector('.addLembrete');
+      // lembrete = JSON.parse(localStorage.getItem('arrayLembrete'));
+      // localStorage.arrayLembrete = JSON.stringify(lembrete);
+
+      const addLembrete = e.target.querySelector('.addLembrete');
 
       lembrete.push(addLembrete.value);
       resultadoLembrete.innerHTML += `<p>${addLembrete.value}</p>`;
-
     }
-
-    lembreteEvent()
 
     // ADD CATEGORIA E VALOR DOS GASTOS E GANHOS
 
-    function eventGanho() {
+    if (e.target === formGanho) {
       const valorCategoriaGanho = [{categoriaGanho: '' , valorGanho: ''}];
-
       const [{categoriaGanho , valorGanho}] = valorCategoriaGanho;
-      const addCategoriaGanho = formGanho.querySelector('.addCategoriaGanho');
-      const addValorGanho = formGanho.querySelector('.addValorGanho');
-
-      console.log(categoriaGanho , valorGanho)
+      const addCategoriaGanho = e.target.querySelector('.addCategoriaGanho');
+      const addValorGanho = e.target.querySelector('.addValorGanho');
 
       valorCategoriaGanho.push(addCategoriaGanho.value , Number(addValorGanho.value));
-
-      resultadoGanho.innerHTML += `<p>${addCategoriaGanho.value}  ${addValorGanho.value}</p>`;
+      resultadoGanho.innerHTML += `<p>${addCategoriaGanho.value} + ${addValorGanho.value}R$</p>`;
     }
 
-    eventGanho()
-
-    function eventGasto() {
+    if (e.target === formGasto) {
       const valorCategoriaGasto = [{categoriaGasto: '' , valorGasto: ''}];
-
       const [{categoriaGasto , valorGasto}] = valorCategoriaGasto;
-      const addCategoriaGasto = formGasto.querySelector('.addCategoriaGasto');
-      const addValorGasto = formGasto.querySelector('.addValorGasto');
-
-      console.log(categoriaGasto , valorGasto)
+      const addCategoriaGasto = e.target.querySelector('.addCategoriaGasto');
+      const addValorGasto = e.target.querySelector('.addValorGasto');
 
       valorCategoriaGasto.push(addCategoriaGasto.value , Number(addValorGasto.value));
-
-      resultadoGasto.innerHTML += `<p>${addCategoriaGasto.value}  ${addValorGasto.value}</p>`;
+      resultadoGasto.innerHTML += `<p>${addCategoriaGasto.value} + ${addValorGasto.value}R$</p>`;
     }
 
-    eventGasto()
-
   }
+
   formLembrete.addEventListener("submit", formEvent);
   formGanho.addEventListener("submit", formEvent);
   formGasto.addEventListener("submit", formEvent);
 
 }
 adicionarEvent();
-
-
